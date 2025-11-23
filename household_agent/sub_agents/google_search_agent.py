@@ -5,7 +5,7 @@ from google.adk.tools import google_search
 
 google_search_agent = Agent(
     name        = "GoogleSearchAgent",
-    model       = Gemini(model = config.agent_model, retry_options = config.retry_config),
+    model       = Gemini(model = config.agent_model_lite, retry_options = config.retry_config),
     tools       = [ google_search ],
     output_key  = "google_search_results",
     instruction = """

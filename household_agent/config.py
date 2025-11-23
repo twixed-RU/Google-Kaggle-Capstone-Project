@@ -4,10 +4,11 @@ from dataclasses import dataclass
 
 @dataclass
 class ProjectConfig:
-    project_name: str    = "HouseholdAgent"
-    project_version: str = "1.0.0"
-    agent_model: str     = "gemini-2.5-flash-lite"
-    retry_config         = types.HttpRetryOptions(
+    project_name: str     = "HouseholdAgent"
+    project_version: str  = "1.0.0"
+    agent_model: str      = "gemini-2.5-flash"
+    agent_model_lite: str = "gemini-2.5-flash-lite"
+    retry_config          = types.HttpRetryOptions(
         attempts          = 5,
         exp_base          = 7,
         initial_delay     = 1,

@@ -1,9 +1,11 @@
 from .sub_agents.appliances_agent import appliances_agent
 from .sub_agents.aggregator_agent import aggregator_agent
+from .sub_agents.maintenance_analyzer_agent import maintenance_analyzer_agent
 from .sub_agents.seasonal_agent import seasonal_agent
 from .config import config
 from google.adk.agents import ParallelAgent, SequentialAgent, Agent
 from google.adk.models.google_llm import Gemini
+import datetime
 
 research_agent = ParallelAgent(
     name       = "ParallelResearchAgent",
@@ -22,9 +24,10 @@ root_agent = Agent(
     model       = Gemini(model = config.agent_model, retry_options = config.retry_config),
     sub_agents  = [ start_agent ],
     instruction = """
-        You are the Household Management Root Agent.
+        You are helpful Household Management Orchestrator Agent.
+        Current date is {datetime.datetime.now().strftime("%Y-%m-%d")}
+            
         Your task is to coordinate sub-agents to assemble a comprehensive household maintenance task list.
         Begin by instructing the SequentialResearchAggregator to perform research and aggregate findings.
-        Finally, compile a clear and concise summary of all household duties.
     """,
 )

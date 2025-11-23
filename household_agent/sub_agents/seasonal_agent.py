@@ -15,6 +15,6 @@ seasonal_agent = Agent(
         Use get_zip_code_tool to get the zip code if needed for location-specific information.
         Use google_search_tool to find relevant information.
         Underline important dates such as last frost dates or zone calendar ideas.
-        Keep the report concise (100 words).
+        Keep the report concise (200 words).
     """,
 )

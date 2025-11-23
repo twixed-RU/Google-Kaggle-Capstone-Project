@@ -5,18 +5,15 @@ import datetime
 
 aggregator_agent = Agent(
     name        = "AggregatorAgent",
-    model       = Gemini(model = config.agent_model, retry_options = config.retry_config),
+    model       = Gemini(model = config.agent_model_lite, retry_options = config.retry_config),
     instruction = f"""
         Current date is {datetime.datetime.now().strftime("%Y-%m-%d")}
-        Combine these two research findings into a single summary:
+        Collect these two research findings into a single output without changing anything:
     
         **Seasonal Tasks:**
         {{seasonal_research}}
         
         **Possible repairs:**
         {{repair_research}}
-        
-        Your summary should highlight common themes, connections, and the most important key takeaways from all reports. 
-        The final summary should be around 200 words for seasonal tasks and a proper list of appliances and their upcoming maintenance schedule.
     """,
 )
