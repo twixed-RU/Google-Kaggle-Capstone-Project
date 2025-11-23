@@ -2,7 +2,7 @@
 
 ## Project Overview - Household Management Agent
 
-**NOTE**: This is a submission for the [Kaggle Agents Intensive Capstone project](https://www.kaggle.com/competitions/agents-intensive-course-capstone-2025/).
+**NOTE**: This is a submission for the [Kaggle Agents Intensive Capstone project](https://www.kaggle.com/competitions/agents-intensive-capstone-project/).
 
 This project contains a multi-agent system designed to help homeowners manage household maintenance tasks intelligently. The agent is built using Google Agent Development Kit (ADK) and follows a modular architecture that coordinates specialized sub-agents to research, analyze, and compile comprehensive household maintenance recommendations.
 
