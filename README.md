@@ -8,7 +8,7 @@ This project contains a multi-agent system designed to help homeowners manage ho
 
 ### Problem Statement
 
-Homeowners struggle to keep track of multiple maintenance responsibilities across appliances, seasonal yard work, and routine home care. Forgetting maintenance schedules can lead to costly repairs, reduced appliance lifespan, and safety hazards. The challenge is compounded by:
+Homeowners frequently face challenges to keep track of multiple maintenance responsibilities across appliances, seasonal yard work, and routine home care. Forgetting maintenance schedules can lead to costly repairs, reduced appliance lifespan, and safety hazards. The challenge is compounded by:
 
 - **Information Overload**: Each appliance has different maintenance requirements and schedules
 - **Seasonal Complexity**: Different maintenance tasks are required throughout the year based on local climate
