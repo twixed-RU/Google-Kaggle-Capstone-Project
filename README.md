@@ -6,6 +6,25 @@
 
 This project contains a multi-agent system designed to help homeowners manage household maintenance tasks intelligently. The agent is built using Google Agent Development Kit (ADK) and follows a modular architecture that coordinates specialized sub-agents to research, analyze, and compile comprehensive household maintenance recommendations.
 
+## Quick Start
+- Get agent code:
+```
+git clone https://github.com/SvetlanaNMik/Google-Kaggle-Capstone-Project.git
+cd Google-Kaggle-Capstone-Project/
+
+```
+- Provide GOOGLE_API_KEY through either your environment or .env file.
+```
+export GOOGLE_API_KEY="<your_API_key>"
+```
+- Run ADK web server and access it at http://127.0.0.1:8000
+```
+adk web
+```
+- Use provided web interface to get a list of upcoming maintenance tasks:
+
+![SCREENSHOT](./screenshot.png "Screenshot")
+
 ### Problem Statement
 
 Homeowners struggle to keep track of multiple maintenance responsibilities across appliances, seasonal yard work, and routine home care. Forgetting maintenance schedules can lead to costly repairs, reduced appliance lifespan, and safety hazards. The challenge is compounded by:
